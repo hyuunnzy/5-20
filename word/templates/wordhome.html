@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block contents %}
+<h1> WORD COUNT </h1>
+<a href="{%url 'about'%}" class="btn btn-link">ABOUT</a>
+<br><br>
+<form action="{%url 'result'%}">
+    <textarea placeholder="내용을 입력하세요." cols="100" rows="20" name="fulltext"></textarea>
+    <br><br>
+    <input type="submit" class="btn btn-primary" value="Count!">
+</form>
+</div>
+{% endblock %}
